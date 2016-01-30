@@ -68,6 +68,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="XBox360.cs" />
     <Compile Include="XBox360Gamepad.cs" />
     <Compile Include="XBox360GamepadButton.cs" />
     <Compile Include="XBox360GamepadState.cs" />
