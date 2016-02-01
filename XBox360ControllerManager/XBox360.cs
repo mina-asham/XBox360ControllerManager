@@ -13,7 +13,7 @@ namespace XBox360ControllerManager
         /// <summary>
         /// XInput DLL, this is compatible with Windows 8+, for previous versions we might need to change this one
         /// </summary>
-        private const String XInputDll = "XInput1_4.dll";
+        private const string XInputDll = "XInput1_4.dll";
 
         /// <summary>
         /// Secret entry point for GetGamepad function
