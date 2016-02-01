@@ -1,9 +1,12 @@
-﻿namespace XBox360ControllerManager
+﻿using System;
+
+namespace XBox360ControllerManager
 {
     /// <summary>
     /// Enum to represent XBox 360 gamepad buttons
     /// For more info check: http://support.xbox.com/en-GB/xbox-360/accessories/controllers
     /// </summary>
+    [Flags]
     public enum XBox360GamepadButton : ushort
     {
         /// <summary>
