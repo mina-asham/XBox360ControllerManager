@@ -3,10 +3,30 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:XBox360ControllerManager"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ShowInTaskbar="False"
+        Height="195"
+        Width="400"
+        KeyUp="MainWindow_OnKeyUp">
+    <Border CornerRadius="10" Background="#555" Padding="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Height="75" Source="Resources/xbox_360.png"></Image>
+            <Label Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White">Power Off</Label>
+            <Label Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Foreground="White">Hide Window</Label>
+            <Image Grid.Row="2" Grid.Column="0" Cursor="Hand" Source="Resources/xbox_360_button_x.png" IsMouseDirectlyOverChanged="UIElement_OnIsMouseDirectlyOverChanged" MouseLeftButtonUp="UIElement_OnMouseLeftButtonUp_PowerOff"></Image>
+            <Image Grid.Row="2" Grid.Column="1" Cursor="Hand" Source="Resources/xbox_360_button_b.png" IsMouseDirectlyOverChanged="UIElement_OnIsMouseDirectlyOverChanged" MouseLeftButtonUp="UIElement_OnMouseLeftButtonUp_HideWindow"></Image>
+        </Grid>
+    </Border>
 </Window>
