@@ -35,6 +35,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\xbox_360.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -100,6 +103,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\xbox_360_button_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\xbox_360_button_x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\xbox_360.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xbox_360.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
