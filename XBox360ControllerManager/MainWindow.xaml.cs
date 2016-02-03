@@ -25,10 +25,10 @@ namespace XBox360ControllerManager
         private void InitializeTrayIcon()
         {
             ContextMenu contextMenu = new ContextMenu();
-            contextMenu.MenuItems.Add(new MenuItem("Open", (sender, args) => Show()));
-            contextMenu.MenuItems.Add(new MenuItem("Exit", (sender, args) => Close()));
-            contextMenu.MenuItems.Add("-");
-            contextMenu.MenuItems.Add(new MenuItem("About", (sender, args) => Process.Start("https://github.com/mina-asham/XBox360ControllerManager")));
+            contextMenu.MenuItems.Add(new MenuItem(Properties.Resources.OpenMenuTitle, (sender, args) => Show()));
+            contextMenu.MenuItems.Add(new MenuItem(Properties.Resources.ExitMenuTitle, (sender, args) => Close()));
+            contextMenu.MenuItems.Add(Properties.Resources.SeparatorString);
+            contextMenu.MenuItems.Add(new MenuItem(Properties.Resources.AboutMenuTitle, (sender, args) => Process.Start(Properties.Resources.AboutURL)));
 
             // ReSharper disable once ObjectCreationAsStatement
             new NotifyIcon

@@ -61,6 +61,24 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &quot;About&quot;.
+        /// </summary>
+        internal static string AboutMenuTitle {
+            get {
+                return ResourceManager.GetString("AboutMenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;https://github.com/mina-asham/XBox360ControllerManager&quot;.
+        /// </summary>
+        internal static string AboutURL {
+            get {
+                return ResourceManager.GetString("AboutURL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap ButtonB {
@@ -81,6 +99,15 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &quot;Exit&quot;.
+        /// </summary>
+        internal static string ExitMenuTitle {
+            get {
+                return ResourceManager.GetString("ExitMenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
         internal static System.Drawing.Icon Icon {
@@ -97,6 +124,24 @@ namespace XBox360ControllerManager.Properties {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Open&quot;.
+        /// </summary>
+        internal static string OpenMenuTitle {
+            get {
+                return ResourceManager.GetString("OpenMenuTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;-&quot;.
+        /// </summary>
+        internal static string SeparatorString {
+            get {
+                return ResourceManager.GetString("SeparatorString", resourceCulture);
             }
         }
     }
