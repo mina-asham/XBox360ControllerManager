@@ -61,7 +61,7 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;About&quot;.
+        ///   Looks up a localized string similar to About.
         /// </summary>
         internal static string AboutMenuTitle {
             get {
@@ -70,7 +70,7 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;https://github.com/mina-asham/XBox360ControllerManager&quot;.
+        ///   Looks up a localized string similar to https://github.com/mina-asham/XBox360ControllerManager.
         /// </summary>
         internal static string AboutURL {
             get {
@@ -99,7 +99,7 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Exit&quot;.
+        ///   Looks up a localized string similar to Exit.
         /// </summary>
         internal static string ExitMenuTitle {
             get {
@@ -128,7 +128,7 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;Open&quot;.
+        ///   Looks up a localized string similar to Open.
         /// </summary>
         internal static string OpenMenuTitle {
             get {
@@ -137,7 +137,7 @@ namespace XBox360ControllerManager.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &quot;-&quot;.
+        ///   Looks up a localized string similar to -.
         /// </summary>
         internal static string SeparatorString {
             get {
