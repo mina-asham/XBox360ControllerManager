@@ -30,13 +30,13 @@ namespace XBox360ControllerManager
             contextMenu.MenuItems.Add(Properties.Resources.SeparatorString);
             contextMenu.MenuItems.Add(new MenuItem(Properties.Resources.AboutMenuTitle, (sender, args) => Process.Start(Properties.Resources.AboutURL)));
 
-            // ReSharper disable once ObjectCreationAsStatement
-            new NotifyIcon
+            NotifyIcon notifyIcon = new NotifyIcon
             {
                 Icon = Properties.Resources.Icon,
                 Visible = true,
                 ContextMenu = contextMenu
             };
+            notifyIcon.DoubleClick += (sender, args) => Show();
         }
 
         private void InitializeXBox360Timer()
