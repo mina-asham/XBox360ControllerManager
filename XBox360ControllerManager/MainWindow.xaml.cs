@@ -44,15 +44,15 @@ namespace XBox360ControllerManager
             Timer timer = new Timer { Enabled = true };
             timer.Tick += (sender, args) =>
             {
-                if (AnyGamepadHasButton(XBox360GamepadButton.Guide))
+                if (AnyGamepadHasButton(XBox360GamepadButton.Guide) && !IsVisible)
                 {
                     Show();
                 }
-                else if (AnyGamepadHasButton(XBox360GamepadButton.B))
+                else if (AnyGamepadHasButton(XBox360GamepadButton.B) && IsVisible)
                 {
                     Hide();
                 }
-                else if (AnyGamepadHasButton(XBox360GamepadButton.X))
+                else if (AnyGamepadHasButton(XBox360GamepadButton.X) && IsVisible)
                 {
                     PowerOff();
                 }
